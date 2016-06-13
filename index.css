@@ -202,4 +202,5 @@ h2 {
   text-decoration: none;
   font-family: ProximaNova-Bold;
   color: #33a6b2;
+  overflow-y: hidden;
 }
