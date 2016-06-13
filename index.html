@@ -1,14 +1,48 @@
 <html>
+
 <head>
-  <title> HashLearn's Snapquiz </title>
+   <title> HashLearn's Snapquiz </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="index.js"></script>
+   <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-  <h1> SnapQuiz </h1>
-  <p> Weekly short challenges. Weekly prizes. </p>
-  <p> Take a short 18-minute challenge, right on your phone every Saturday. </p>
-  <button> Download the app to participate now </button>
+   <div class="navbar">
+      <ul class="tabs">
+         <li><a href="#home"><div id="homelogo"></div></a></li>
+      </ul>
+   </div>
 
-
-  <h1> Leaderboard </h1>
+   <div id="home">
+      <div id="sqlogo"></div>
+      <p id="hometext1"> Weekly short challenges. Weekly prizes. </p>
+      <br><br>
+      <p id="hometext2"> Take a short 18-minute challenge, right on your phone every Saturday. </p>
+      <br/>
+      <p id="hometext3"> To participate, download <span>HashLearn Now</span> on your phone. </p>
+      <div class="countdownTimer"></div>
+      <a href="https://play.google.com/store/apps/details?id=com.hashlearn.now&hl=en"><div id="dlhlnow"></div></a>
+   </div>
+   <div id="prizes">
+      <h2> Prizes </h2>
+      <p id="prizestext"> Leaders in each category get weekly Flipkart vouchers for </p>
+      <table class="prizegrid" border="0">
+        <tr>
+          <td><div id="firstp"></div></td>
+          <td><div id="secondp"></div></td>
+          <td><div id="thirdp"></div></td>
+        </tr>
+        <tr>
+          <td id="topprize">Rs.1000/-</td>
+          <td id="secondprize">Rs.500/-</td>
+          <td id="thirdprize">Rs.250/-</td>
+        </tr>
+      </table>
+   </div>
+   <div id="footer">
+    Powered by <a href="http://now.hashlearn.com">HashLearn Now</a>
+   </div>
 </body>
+
 </html>

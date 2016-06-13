@@ -1,0 +1,110 @@
+
+@@media screen and (max-width: 680px) {
+  .tabs li:not(:first-child) {display: none;}
+  .tabs li.icon {
+    float: right;
+    display:inline-block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .tabs.responsive {
+    position: relative;
+  }
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('font/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .tabs.responsive li.icon {
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .tabs.responsive li {
+    float: none;
+    display: inline;
+  }
+
+  .tabs.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+   background-color: #ffcc00;
+   margin: 0;
+   padding: 0;
+   font-family: 'ProximaNova-Regular';
+}
+
+.tabs {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #ffcc00;
+}
+
+.tabs li {
+   float: left;
+   margin: 0;
+   padding: 0;
+}
+
+.tabs li a {
+  margin: 0;
+  padding: 0;
+}
+
+#homelogo {
+  background-image: image("resources/logo.png");
+}
+
+.tabs li a {
+   display: inline-block;
+   text-decoration: none;
+   color: #454545;
+   padding: 14px 16px;
+   transition: 0.3s;
+   font-size: 20 px;
+}
+
+.tabs li a:hover {
+  background-color: #454545;
+  color: #ffffff;
+}
+
+.tabs li.icon {
+  display: none;
+}
+
+#home {
+  background-color: #454545;
+  color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+///* TODO:  */
+#sqlogo {
+  height: 100px;
+  width: 100px;
+  background-image: url();
+}
+
+#dlhlnow {
+  background-color: #ffcc00;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 30px;
+  color: #000000;
+}
